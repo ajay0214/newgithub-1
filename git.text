@@ -1,0 +1,56 @@
+Learn GIT version control system
+
+Git is a tool that helps you:
+-save and manage different versions of your files and code.
+-work with others, keep track of changes, and undo mistakes.
+_____________________________________________________________________________________________________________
+You can change these settings at any time, they only affect how your name and email appear in your commits.
+
+--git config --global user.name "Your Name"
+--git config --global user.email "you@example.com"
+
+_____________________________________________________________________________________________________________
+Initialize Git
+--Now that we are in the correct folder, we can initialize Git on that folder:
+
+Example
+--git init 
+--Initialized empty Git repository in /Users/user/myproject/.git/
+___________________________________________________________________________________________________________________
+What is a Repository?
+--A Git repository is a folder that Git tracks for changes.
+
+--The repository stores all your project's history and versions.
+___________________________________________________________________________________________________________________
+What is the Staging Environment?
+
+--The staging environment (or staging area) is like a waiting room for your changes.
+
+--You use it to tell Git exactly which files you want to include in your next commit.
+
+--This gives you control over what goes into your project history.
+
+Here are some key commands for staging:
+
+--git add <file> - Stage a file
+--git add --all or git add -A - Stage all changes
+--git status - See what is staged
+--git restore --staged <file> - Unstage a file
+___________________________________________________________________________________________________________________
+What is a Commit?
+
+--A commit is like a save point in your project.
+
+--It records a snapshot of your files at a certain time, with a message describing what changed.
+
+--You can always go back to a previous commit if you need to.
+
+Here are some key commands for commits:
+
+--git commit -m "message" - Commit staged changes with a message
+--git commit -a -m "message" - Commit all tracked changes (skip staging)
+--git log - See commit history
+_______________________________________________________________________________________________________________
+What is a Git Branch?
+
+--In Git, a branch is like a separate workspace where you can make changes and try new ideas without affecting the main project. Think of it as a "parallel universe" for your code.
